@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+
+.Hero {
+  height: 95vh;
+  background-image: url(https://img.freepik.com/free-photo/liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper_1258-85220.jpg?t=st=1732624808~exp=1732628408~hmac=662e6c297bb7053ca7f376ecd45fa2b21a725108d6877f33cc0fc98b7c7db6b3&w=1380);
+  background-size: cover;
+}
+.navbar {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 60px 200px;
+}
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 200px;
+}
+li > a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  gap: 30px;
+  color: white;
+}
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 34px;
+  margin-top: 20px;
+}
+.start {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.purchase {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  background-color: #e93a7d;
+}
+.purchase:hover {
+  background-color: #8e093c;
+}
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.leftTitle {
+  font-size: 58px;
+  font-weight: 700;
+  color: white;
+}
+.leftText {
+  font-size: 22px;
+  color: white;
+}
+.learn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 157px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  background-color: #e93a7d;
+}
+.learn:hover {
+  background-color: #8e093c;
+}
+.heroRight {
+  width: 70%;
+  gap: 30px;
+  border-radius: 10px;
+}
+.heroRight > img {
+  object-fit: cover;
+  height: 400px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 45%;
+  height: auto;
+}
+.cardTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #360136;
+}
+.cardText {
+  font-size: 16px;
+  opacity: 50%;
+}
+.Features {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+  padding: 20px 200px;
+}
+.featuresContainer {
+  display: flex;
+  flex-direction: column;
+}
+.featureCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.featuresTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.featuresTitle :first-child {
+  font-size: 42px;
+  font-weight: 700;
+  color: #360136;
+}
+
+.featureCard {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: start;
+  width: 45%;
+  height: auto;
+}
+.mainTitle {
+  font-size: 18px;
+  color: #360136;
+  font-weight: 500;
+}
+img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+.tCardText {
+  font-size: 16px;
+  opacity: 50%;
+}
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hamburger-icon {
+  display: none;
+  width: 50px;
+  height: 40px;
+}
+.TrueFalse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 200px;
+  gap: 30px;
+}
+.trueFalseContainer {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.tf {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 180, 180, 0.804);
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  gap: 10px;
+}
+#tf2 {
+  background-color: rgba(148, 227, 148, 0.737);
+}
+.tfTitle {
+  font-size: 42px;
+  color: #360136;
+  font-weight: 700;
+}
+.fCardTitle {
+  font-size: 18px;
+  color: #360136;
+  font-weight: 500;
+}
+.titlee {
+  font-size: 24px;
+  color: #224430;
+  font-weight: 500;
+}
+#titleee {
+  color: rgb(151, 29, 29);
+}
+.textt {
+  font-size: 20px;
+  opacity: 50%;
+}
+
+@media (max-width: 1440px) {
+  .navbar {
+    padding: 50px 50px;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+
+  .pages {
+    display: flex;
+    font-size: 20px;
+    display: none;
+    width: 70px;
+    flex-direction: column;
+  }
+  li {
+    padding: 5px;
+  }
+  .purchase {
+    margin-top: 17px;
+  }
+  .pages.active {
+    display: block;
+  }
+
+  .leftTitle {
+    font-size: 38px;
+  }
+  .leftText {
+    font-size: 18px;
+  }
+  .learn {
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .heroRight {
+    width: 900px;
+    padding: 40px 0;
+  }
+  .rightTitle {
+    font-size: 35px;
+    color: #360136;
+    font-weight: 700;
+  }
+  .heroContainer {
+    padding: 20px 50px;
+    gap: 10px;
+  }
+  .inputs {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  /* .Content{
+  display: flex;
+  padding: 50px 50px;
+} */
+  /* .contentTitle{
+  font-size: 38px;
+} */
+  .featuresTitle {
+    font-size: 38px;
+  }
+  .Features {
+    padding: 30px 50px;
+  }
+  img {
+    height: 150px;
+  }
+  .tCardTitle {
+    font-size: 16px;
+  }
+  .tCardText {
+    font-size: 14px;
+  }
+  .tfTitle{
+    font-size: 38px;
+  }
+}
