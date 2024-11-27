@@ -21,6 +21,13 @@ button {
   justify-content: space-between;
   padding: 60px 200px;
 }
+.router{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  gap:20px
+}
 .heroContainer {
   display: flex;
   align-items: center;
@@ -31,19 +38,15 @@ li > a {
   color: white;
   text-decoration: none;
 }
-ul {
-  display: flex;
-  list-style: none;
-  font-size: 18px;
-  gap: 30px;
-  color: white;
-}
+
 .pages {
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 34px;
-  margin-top: 20px;
+  color: white;
+  /* margin-top: 20px; */
 }
 .start {
   font-size: 24px;
@@ -125,7 +128,7 @@ ul {
   flex-direction: column;
 
   gap: 30px;
-  padding: 20px 200px;
+  padding: 90px 200px;
 }
 .featuresContainer {
   display: flex;
@@ -134,17 +137,20 @@ ul {
 .featureCards {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 35px;
 }
 
-.featuresTitle {
+/* .featuresTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
-}
-.featuresTitle :first-child {
+} */
+.featuresTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 42px;
   font-weight: 700;
   color: #360136;
@@ -153,7 +159,7 @@ ul {
 .featureCard {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
   align-items: center;
   justify-content: start;
   width: 45%;
@@ -170,26 +176,27 @@ img {
   border-radius: 8px;
 }
 .tCardText {
-  font-size: 16px;
+  font-size: 18px;
   opacity: 50%;
 }
 .texts {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .hamburger-icon {
   display: none;
   width: 50px;
-  height: 40px;
+  height: 25px;
+  /* background-color: white; */
 }
 .TrueFalse {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 200px;
+  padding: 90px 200px;
   gap: 30px;
 }
 .trueFalseContainer {
@@ -201,12 +208,12 @@ img {
   width: 45%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
   background-color: rgba(255, 180, 180, 0.804);
-  height: 200px;
-  text-align: center;
-  padding: 20px;
+  height: 270px;
+  /* text-align: center; */
+  padding: 40px 20px;
   border-radius: 8px;
   gap: 10px;
 }
@@ -219,7 +226,7 @@ img {
   font-weight: 700;
 }
 .fCardTitle {
-  font-size: 18px;
+  font-size: 20px;
   color: #360136;
   font-weight: 500;
 }
@@ -235,7 +242,57 @@ img {
   font-size: 20px;
   opacity: 50%;
 }
-
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 200px;
+  gap: 35px;
+}
+.aboutContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.aboutText{
+  font-size: 20px;
+  opacity: 50%;
+}
+.aboutImg{
+  width: 100%;
+  height: 350px;
+}
+.miniBoxs{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+.miniBox{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 400px;
+  height: 250px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #3601361a;
+  /* border: 1px solid red; */
+}
+.miniTitle{
+  font-size: 22px;
+  font-weight: 500;
+  color: #360136;
+}
+.miniText{
+  font-size: 18px;
+  opacity: 50%;
+}
 @media (max-width: 1440px) {
   .navbar {
     padding: 50px 50px;
@@ -245,20 +302,23 @@ img {
   }
 
   .pages {
-    display: flex;
-    font-size: 20px;
+   
     display: none;
-    width: 70px;
-    flex-direction: column;
   }
-  li {
-    padding: 5px;
-  }
-  .purchase {
-    margin-top: 17px;
-  }
-  .pages.active {
+  /* li {
+    padding:5px;
+    } */
+    .purchase {
+      margin-top: 17px;
+    }
+    .pages.active {
+    font-size: 20px;
     display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+  gap: 5px;
   }
 
   .leftTitle {
@@ -282,7 +342,7 @@ img {
     font-weight: 700;
   }
   .heroContainer {
-    padding: 20px 50px;
+    padding: 50px 50px;
     gap: 10px;
   }
   .inputs {
@@ -291,18 +351,11 @@ img {
   input {
     width: 100%;
   }
-  /* .Content{
-  display: flex;
-  padding: 50px 50px;
-} */
-  /* .contentTitle{
-  font-size: 38px;
-} */
   .featuresTitle {
-    font-size: 38px;
+    font-size: 32px;
   }
   .Features {
-    padding: 30px 50px;
+    padding: 50px 50px;
   }
   img {
     height: 150px;
@@ -311,9 +364,74 @@ img {
     font-size: 16px;
   }
   .tCardText {
-    font-size: 14px;
+    font-size: 16px;
   }
   .tfTitle{
-    font-size: 38px;
+    font-size: 32px;
+  }
+  .heroRight>img{
+    width: 100%;
+    height: 300px;
+  }
+  .about{
+    padding: 0 50px;
+  }
+  .miniTitle{
+    font-size: 18px;
+  }
+  .miniText
+  {
+    font-size: 16px;
+  }
+  .miniBox{
+    width: 90%;
+    height: 170px;
+  }
+  .aboutImg{
+    height: 200px;
+  }
+  .TrueFalse{
+    padding: 50px 50px;
+  }
+  .titlee{
+    font-size: 20px;
+  }
+  .textt{
+    font-size: 18px;
+  }
+  .titlee{
+    font-size: 20px;
+  }
+  .textt{
+    font-size: 16px;
+  }
+  .miniBoxs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .featureCards{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+  }
+  .featureCard{
+    width: 70%;
+  }
+  .featureCard>img{
+    height: 250px;
   }
 }
+/* @media (max-width: 600px) {
+.start{
+  font-size: 22px;
+}
+.hamburger-icon{
+  width: 40px;
+}
+.leftTitle{
+  font-size: 28px;
+}
+} */
+
